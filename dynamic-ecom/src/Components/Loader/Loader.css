@@ -1,0 +1,46 @@
+.loading{
+    margin-top: 20%;
+    color: rgba(105,187,167,255);
+    font-size: xx-large;
+}
+.rotate{
+    /* animation: rotate infinite 10s alternate-reverse; */
+    float: left;
+    z-index: 1;
+    background-color:rgba(33,58,75,255);
+    color:white;
+    width:1%;
+    height:100%;
+    margin-left:0.5%;
+    animation: changeColor infinite 1024ms alternate ease-in-out;
+}
+
+.reverse-rotate{
+    float: right;
+}
+
+@keyframes changeColor {
+    from{
+        background-color:rgba(105,187,167,255);
+    }
+    to{
+        background-color:lightblue;
+    }
+    
+}
+#loader{
+    /* animation: rotate infinite 10s reverse; */
+    /* display: flex; */
+    position:fixed;
+    border-radius: 25px;
+    height: 40px;
+    border:1px solid rgba(105,187,167,255);
+    
+}
+
+body{
+    background-color: rgba(34,57,75,255);
+}
+.circle{
+    /* border-radius: 100%; */
+}

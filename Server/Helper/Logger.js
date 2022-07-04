@@ -11,12 +11,12 @@ exports.log = (file,type,msg)=>{
         console.log('\x1b[32m%s\x1b[0m',`[API ]  ${msg}`)
     }
     else if(type==='warn'){
-        console.log('\x1b[33m%s\x1b[0m',`[WARN] ${msg}`)
+        console.log('\x1b[33m%s\x1b[0m',`[WARN]  ${msg}`)
     }
     else if(type==='msg'){
-        console.log('\x1b[34m%s\x1b[0m',`[MSG ] ${msg}`)
+        console.log('\x1b[34m%s\x1b[0m',`[MSG ]  ${msg}`)
     }
     else{
-        console.log(`[INFO] ${msg}`)
+        console.log(`[INFO]  ${msg}`)
     }
 }

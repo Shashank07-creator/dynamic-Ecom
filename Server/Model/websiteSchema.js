@@ -9,7 +9,7 @@ const websiteSchema = mongoose.Schema({
         type:String,
         default:'Header'
     },
-    name:{
+    label:{
         type:String,
         require:true
     },
@@ -19,19 +19,10 @@ const websiteSchema = mongoose.Schema({
     viewType:{
         type:String
     },
-    image:{
-        type:URL
-    },
     url:{
         type:URL
     },
     subNodeOf:{
-        type:String
-    },
-    file:{
-        type:Boolean,
-    },
-    fileName:{
         type:String
     },
     fileType:{

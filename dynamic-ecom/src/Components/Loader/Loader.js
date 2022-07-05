@@ -1,6 +1,5 @@
 import './Loader.css'
 let initialLoader = (delay)=>{
-    console.log(delay)
     return(
         // <div style={reverse?styleRevRotate:styleRotate} className={`${reverse?'reverse-rotate':'rotate'} circle loading`}>
         // </div>

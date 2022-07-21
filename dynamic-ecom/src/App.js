@@ -5,13 +5,16 @@ import Loader from './Components/Loader/Loader';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomePage from './Pages/HomePage';
 import ErrorPage from './Pages/ErrorPage';
+import HeaderPageV2 from './Pages/HeaderPage_v2';
 
 function App() {
   function halt() {
     console.clear()
-    document.getElementById('load').style.display = 'none'
-    document.getElementById('content').style.display = 'block'
-    document.getElementsByTagName('body')[0].style.backgroundColor = 'white'
+    setTimeout(() => {
+      document.getElementById('load').style.display = 'none'
+      document.getElementById('content').style.display = 'block'
+      document.getElementsByTagName('body')[0].style.backgroundColor = 'white'
+    }, 1000 /*8000*/);
   }
   const [loadCount, setLoadCount] = useState(0)
   function updateLoadCount() {
@@ -29,6 +32,7 @@ function App() {
         <Router>
           <Routes>
             <Route exact path='/' element={<HomePage />} />
+            <Route exact path='/v2' element={<HeaderPageV2/>}/>
             <Route path='*' element={<ErrorPage/>}/>
           </Routes>
         </Router>
